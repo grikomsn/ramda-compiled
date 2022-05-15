@@ -1,0 +1,25 @@
+{
+  "name": "ramda-compiled",
+  "version": "0.0.0",
+  "packageManager": "yarn@1.22.18",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build --scope=ramda-compiled-src --include-dependencies --no-deps",
+    "clean": "turbo run clean",
+    "deduplicate": "npx yarn-deduplicate && yarn install",
+    "ramda": "yarn workspace ramda-compiled",
+    "lint": "turbo run lint",
+    "prepare": "husky install",
+    "release": "yarn workspace ramda-compiled publish"
+  },
+  "devDependencies": {
+    "husky": "^7",
+    "lint-staged": "^12",
+    "postinstall-postinstall": "^2",
+    "shx": "^0",
+    "turbo": "^1"
+  },
+  "private": true
+}

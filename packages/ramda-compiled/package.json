@@ -1,0 +1,26 @@
+{
+  "name": "ramda-compiled",
+  "description": "Compiled ramda package using @vercel/ncc 🏄‍♂️",
+  "version": "0.0.3",
+  "author": "Griko Nibras <hello@griko.id>",
+  "repository": "https://github.com/grikomsn/ramda-compiled.git",
+  "homepage": "https://github.com/grikomsn/ramda-compiled",
+  "bugs": "https://github.com/grikomsn/ramda-compiled/issues",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "dependencies": {
+    "@types/ramda": "0.28.12"
+  },
+  "files": [
+    "**/*.cjs",
+    "**/*.mjs",
+    "**/*.d.ts"
+  ],
+  "keywords": [
+    "ramda",
+    "ramda-compiled"
+  ],
+  "license": "MIT"
+}

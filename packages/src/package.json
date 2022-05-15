@@ -1,0 +1,25 @@
+{
+  "name": "ramda-compiled-src",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "yarn build:cjs && yarn build:mjs && yarn build:types",
+    "build:cjs": "ncc build ./index.cjs --minify --out ../ramda-compiled/dist/",
+    "build:mjs": "ncc build ./index.mjs --minify --out ../ramda-compiled/dist/",
+    "build:types": "shx cp ../../node_modules/@types/ramda/*.ts ../ramda-compiled/dist/"
+  },
+  "dependencies": {
+    "@types/ramda": "0.28.12",
+    "ramda": "0.28.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@project/eslint-config"
+    ],
+    "ignorePatterns": [
+      "node_modules"
+    ],
+    "root": true
+  },
+  "prettier": "@project/prettier-config",
+  "private": true
+}
