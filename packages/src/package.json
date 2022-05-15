@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@types/ramda": "0.28.12",
+    "@vercel/ncc": "^0",
     "ramda": "0.28.0"
   },
   "eslintConfig": {
